@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "hexo clean",
     "generate": "hexo generate",
+    "postgenerate": "ggit-last -f public/build.json",
     "start": "hexo server"
   },
   "private": true,
@@ -25,15 +26,16 @@
     "version": "3.3.8"
   },
   "devDependencies": {
+    "ggit": "^1.23.0",
     "hexo": "3.3.8",
     "hexo-deployer-git": "^0.3.0",
     "hexo-generator-index": "0.2.1",
+    "hexo-pagination": "^0.1.0",
     "hexo-renderer-ejs": "0.3.0",
     "hexo-renderer-jade": "0.4.1",
     "hexo-renderer-less": "0.2.0",
-    "hexo-renderer-stylus": "0.3.3",
     "hexo-renderer-marked": "0.3.0",
-    "hexo-pagination": "^0.1.0",
+    "hexo-renderer-stylus": "0.3.3",
     "hexo-server": "^0.2.1"
   }
 }
