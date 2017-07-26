@@ -1,5 +1,7 @@
 # test-semantic-deploy
 
+[![Build status][ci-image] ][ci-url]
+
 A small Hexo static blog site, deployed automatically if there are meaningful
 commits since last deploys. Used to test
 [semantic-action](https://github.com/bahmutov/semantic-action) tool.
@@ -17,3 +19,6 @@ $ curl https://glebbahmutov.com/test-semantic-deploy/build.json
   "version": "1.0.0"
 }
 ```
+
+[ci-image]: https://travis-ci.org/bahmutov/test-semantic-deploy.svg?branch=master
+[ci-url]: https://travis-ci.org/bahmutov/test-semantic-deploy
