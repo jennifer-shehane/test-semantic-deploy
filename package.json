@@ -8,6 +8,8 @@
     "clean": "hexo clean",
     "generate": "hexo generate",
     "postgenerate": "ggit-last -f public/build.json",
+    "predeploy": "npm run generate",
+    "deploy": "hexo deploy",
     "start": "hexo server"
   },
   "private": true,
