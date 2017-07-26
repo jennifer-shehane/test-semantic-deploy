@@ -41,5 +41,8 @@
     "hexo-renderer-stylus": "0.3.3",
     "hexo-server": "^0.2.1",
     "semantic-release": "file:///Users/irinakous/git/semantic-action"
+  },
+  "release": {
+    "verifyConditions": "./src/local-action.js"
   }
 }
