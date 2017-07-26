@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "ggit": "^1.23.0",
+    "got": "^7.1.0",
     "hexo": "3.3.8",
     "hexo-deployer-git": "^0.3.0",
     "hexo-generator-index": "0.2.1",
@@ -43,6 +44,10 @@
     "semantic-release": "file:///Users/irinakous/git/semantic-action"
   },
   "release": {
-    "verifyConditions": "./src/local-action.js"
+    "verifyConditions": "./src/local-action.js",
+    "getLastRelease": {
+      "path": "./src/get-last-release.js",
+      "url": "https://glebbahmutov.com/test-semantic-deploy/build.json"
+    }
   }
 }
