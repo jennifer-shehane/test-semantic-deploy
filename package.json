@@ -41,13 +41,15 @@
     "hexo-renderer-marked": "0.3.0",
     "hexo-renderer-stylus": "0.3.3",
     "hexo-server": "^0.2.1",
-    "semantic-release": "file:///Users/irinakous/git/semantic-action"
+    "semantic-release": "file:///Users/irinakous/git/semantic-action",
+    "simple-commit-message": "^3.3.0"
   },
   "release": {
     "verifyConditions": "./src/local-action.js",
     "getLastRelease": {
       "path": "./src/get-last-release.js",
       "url": "https://glebbahmutov.com/test-semantic-deploy/build.json"
-    }
+    },
+    "analyzeCommits": "simple-commit-message"
   }
 }
