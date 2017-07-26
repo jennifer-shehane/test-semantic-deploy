@@ -10,7 +10,8 @@
     "postgenerate": "ggit-last -f public/build.json",
     "predeploy": "npm run generate",
     "deploy": "hexo deploy",
-    "start": "hexo server"
+    "start": "hexo server",
+    "semantic-deploy": "npm_config_loglevel=verbose semantic-action pre"
   },
   "private": true,
   "repository": {
@@ -38,6 +39,7 @@
     "hexo-renderer-less": "0.2.0",
     "hexo-renderer-marked": "0.3.0",
     "hexo-renderer-stylus": "0.3.3",
-    "hexo-server": "^0.2.1"
+    "hexo-server": "^0.2.1",
+    "semantic-release": "file:///Users/irinakous/git/semantic-action"
   }
 }
