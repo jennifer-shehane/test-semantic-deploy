@@ -11,7 +11,7 @@
     "predeploy": "npm run generate",
     "deploy": "hexo deploy",
     "start": "hexo server",
-    "semantic-deploy": "npm_config_loglevel=verbose semantic-action pre"
+    "semantic-deploy": "npm_config_loglevel=verbose semantic-action pre && npm run deploy"
   },
   "private": true,
   "repository": {
