@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "hexo clean",
     "generate": "hexo generate",
-    "postgenerate": "ggit-last -f public/build.json",
+    "postgenerate": "git-last -f public/build.json",
     "predeploy": "npm run generate",
     "deploy": "hexo deploy",
     "start": "hexo server",
@@ -29,7 +29,7 @@
     "version": "3.3.8"
   },
   "devDependencies": {
-    "ggit": "^1.23.0",
+    "git-last": "^1.0.1",
     "got": "^7.1.0",
     "hexo": "3.3.8",
     "hexo-deployer-git": "^0.3.0",
