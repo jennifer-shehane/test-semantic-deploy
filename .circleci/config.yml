@@ -33,7 +33,8 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run tests!
+      - run: npm run generate
+      - run: ls public
       - run: echo "Write tests"
 
       # deploy using read-write SSH key
@@ -41,4 +42,4 @@ jobs:
       # ssh-keygen -t rsa -b 4096 -C "test-semantic-deploy@circleci.com"
       - run: git config --global user.email "test-semantic-deploy@circleci.com"
       - run: git config --global user.name "Circle CI"
-      - run: npm run deploy
+      - run: $(npm bin)/hexo deploy
