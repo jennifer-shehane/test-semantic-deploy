@@ -16,7 +16,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bahmutov/test-semantic-deploy.git"
+    "url": "https://github.com/bahmutov/test-semantic-deploy.git"
   },
   "keywords": [],
   "author": "",

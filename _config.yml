@@ -93,6 +93,7 @@ exclude_generator:
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
+## "Normal" deploy
 deploy:
   type: git
   repo: git@github.com:bahmutov/test-semantic-deploy.git

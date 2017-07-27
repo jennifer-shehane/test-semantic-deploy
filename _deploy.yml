@@ -1,0 +1,9 @@
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: https://aaaa:$GH_TOKEN@github.com/bahmutov/test-semantic-deploy.git
+  # repo: https://$NPM_TOKEN:x-oauth-basic@github.com
+  # repo: git@github.com:bahmutov/test-semantic-deploy.git
+  branch: gh-pages
+  message: Blog updated
