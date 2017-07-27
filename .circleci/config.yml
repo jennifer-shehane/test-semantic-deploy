@@ -35,4 +35,6 @@ jobs:
 
       # run tests!
       - run: echo "Write tests"
+      - run: git config --global user.email "ci@circleci.com"
+      - run: git config --global user.name "Circle CI"
       - run: npm run deploy
