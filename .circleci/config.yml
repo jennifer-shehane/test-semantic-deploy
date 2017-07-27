@@ -35,6 +35,10 @@ jobs:
 
       # run tests!
       - run: echo "Write tests"
-      - run: git config --global user.email "ci@circleci.com"
+
+      # deploy using read-write SSH key
+      # https://circleci.com/docs/1.0/adding-read-write-deployment-key/
+      # ssh-keygen -t rsa -b 4096 -C "test-semantic-deploy@circleci.com"
+      - run: git config --global user.email "test-semantic-deploy@circleci.com"
       - run: git config --global user.name "Circle CI"
       - run: npm run deploy
