@@ -1,6 +1,7 @@
 # test-semantic-deploy
 
 [![Build status][ci-image] ][ci-url]
+[![CircleCI](https://circleci.com/gh/bahmutov/test-semantic-deploy.svg?style=svg)](https://circleci.com/gh/bahmutov/test-semantic-deploy)
 
 A small Hexo static blog site, deployed automatically if there are meaningful
 commits since last deploys. Used to test
