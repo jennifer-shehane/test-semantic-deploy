@@ -43,5 +43,5 @@ jobs:
       # ssh-keygen -t rsa -b 4096 -C "test-semantic-deploy@circleci.com"
       - run: git config --global user.email "test-semantic-deploy@circleci.com"
       - run: git config --global user.name "Circle CI"
-      - run: npm run semantic-deploy
+      - run: npm run semantic-deploy || true
       # - run: $(npm bin)/hexo deploy
