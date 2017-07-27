@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10
+      - image: circleci/node:6
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -35,6 +35,7 @@ jobs:
 
       - run: npm run generate
       - run: ls public
+      - run: cat public/index.html
       - run: echo "Write tests"
 
       # deploy using read-write SSH key
