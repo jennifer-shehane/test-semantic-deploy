@@ -8,9 +8,9 @@ A small Hexo static blog site, deployed automatically if there are meaningful
 commits since last deploys. Used to test
 [semantic-action](https://github.com/bahmutov/semantic-action) tool.
 
-See configuration in `release` object inside [package.json](package.json)
+See configuration in `release` object inside [package.json](package.json).
 
-After deploy, check deployed build information
+After deploy, check deployed build information:
 
 ```text
 $ curl https://glebbahmutov.com/test-semantic-deploy/build.json
